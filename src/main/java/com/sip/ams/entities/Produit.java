@@ -27,15 +27,15 @@ public class Produit {
     @Column(name = "libelle")
     private String libelle;
     
-    @NotBlank(message = "Photo Face est obligatoire")
+   // @NotBlank(message = "Photo Face est obligatoire")
     @Column(name = "photoFace")
     private String photoFace;
     
-    @NotBlank(message = "Photo de profil est obligatoire")
+    //@NotBlank(message = "Photo de profil est obligatoire")
     @Column(name = "photoProfil")
     private String photoProfil;
  
-    @NotBlank(message = "Prix est obligatoire")
+   // @NotBlank(message = "Prix est obligatoire")
     @Column(name = "prix")
     private float prix;
     
@@ -43,15 +43,15 @@ public class Produit {
     @Column(name = "description")
     private String description;
     
-    @NotBlank(message = "Quantite est obligatoire")
+    //@NotBlank(message = "Quantite est obligatoire")
     @Column(name = "quantiteStock")
     private int quantiteStock;
     
-    @NotBlank(message = "Prix Promotion est obligatoire")
+    //@NotBlank(message = "Prix Promotion est obligatoire")
     @Column(name = "prixPromotion")
     private float prixPromotion;
     
-    @NotBlank(message = "Date d'expiration est obligatoire")
+    //@NotBlank(message = "Date d'expiration est obligatoire")
     @Column(name = "dateExpiration")
     private Date dateExpiration;
     

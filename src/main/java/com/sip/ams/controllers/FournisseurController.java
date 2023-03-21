@@ -21,7 +21,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.sip.ams.entities.Fournisseur;
 import com.sip.ams.entities.Produit;
-import com.sip.ams.entities.Provider;
 import com.sip.ams.repositories.FournisseurRepository;
 import com.sip.ams.services.FournisseurService;
 @Controller
