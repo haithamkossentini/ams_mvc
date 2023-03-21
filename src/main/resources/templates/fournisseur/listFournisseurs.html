@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Providers</title>
+    <title>Fournisseurs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -15,7 +15,7 @@
     <div class="container my-2">
         <div class="card">
             <div class="card-body">
-                <div th:switch="${providers}" class="container my-5">
+                <div th:switch="${fournisseurs}" class="container my-5">
                     <p class="my-5">
                       <a th:href="@{'/fournisseurs/add/'}" class="btn btn-primary"><i
 							class="fas fa-user-plus ml-2"> Ajouter Fournisseur</i></a>
@@ -35,13 +35,13 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr th:each="fournisseur : ${fournisseur}">
-                                        <td th:text="${fournisseur.name}"></td>
+                                    <tr th:each="fournisseur : ${fournisseurs}">
+                                        <td th:text="${fournisseur.nom}"></td>
                                         <td th:text="${fournisseur.email}"></td>
                                         <td th:text="${fournisseur.address}"></td>
-                                        <td><a th:href="@{/fournisseur/show/{id}(id=${fournisseur.id})}" class="btn btn-primary"><i class="fas fa-user-edit ml-2"></i>Details</a></td>
-                                        <td><a th:href="@{/fournisseur/edit/{id}(id=${fournisseur.id})}" class="btn btn-warning"><i class="fas fa-user-edit ml-2"></i></a></td>
-                                        <td><a th:href="@{/fournisseur/delete/{id}(id=${fournisseur.id})}" class="btn btn-danger"><i class="fas fa-user-times ml-2"></i></a></td>
+                                        <td><a th:href="@{/fournisseurs/show/{id}(id=${fournisseur.id})}" class="btn btn-primary"><i class="fas fa-user-edit ml-2"></i>Details</a></td>
+                                        <td><a th:href="@{/fournisseurs/edit/{id}(id=${fournisseur.id})}" class="btn btn-warning"><i class="fas fa-user-edit ml-2"></i></a></td>
+                                        <td><a th:href="@{/fournisseurs/delete/{id}(id=${fournisseur.id})}" class="btn btn-danger"><i class="fas fa-user-times ml-2"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>

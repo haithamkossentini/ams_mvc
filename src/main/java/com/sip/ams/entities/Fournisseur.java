@@ -17,7 +17,7 @@ public class Fournisseur {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 	
-    @NotBlank(message = "Logo est obligatoire")
+   // @NotBlank(message = "Logo est obligatoire")
     @Column(name = "logo")
     private String logo;
     
@@ -34,7 +34,7 @@ public class Fournisseur {
     @Column(name = "telephone")
     private String telephone;
     
-    @NotBlank(message = "Address is mandatory")
+    @NotBlank(message = "Address est obligatoire")
     @Column(name = "address", nullable=false)
     private String address;
     

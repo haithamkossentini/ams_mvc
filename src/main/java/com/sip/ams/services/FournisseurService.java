@@ -16,7 +16,7 @@ public class FournisseurService {
     public FournisseurService(FournisseurRepository fournisseurRepository) {
         this.fournisseurRepository = fournisseurRepository;
     }
-    public List<Fournisseur> getAllProvider(){
+    public List<Fournisseur> getAllFournisseur(){
         return (List<Fournisseur>)fournisseurRepository.findAll();
 
     }
